@@ -27,8 +27,15 @@ you need to have a familiarity with basic django. This project will be implement
 1.1.1) Get the project.
 -----------------------
 To get the project from this repo simply use the 'git' command and clone it::
-
+    
+    mkdir red_jobo #creates a new folder to compartmentalize the project
+    cd red_jobo
     git clone "https://github.com/cmwaura/Final_Red_Scrap.git"
+    
+once  you have cloned the project simply::
+    
+    cd  sites
+    ls  # to check whether manage.py is in the directory
 
 1.1.2) Requirements needed for the project
 -------------------------------------------
@@ -40,6 +47,31 @@ All the requirements have been added on the requirements.txt file in the project
 
 and all the requirements will be installed for you. For people using a Linux distro this should be enough for you. However
 for people using windows you will need an extra addition of [pywin32.exe](https://sourceforge.net/projects/pywin32/). Install it to your local drive then use easy_install to add it to your environment::
-
+ 
     easy_install C:\>path\to\your\pywin32\install
+    
+1.2) Running the admin.
+
+before you try to run the admin, make sure that you are in the same directory as 'manage.py' by using ls/dir. If you are not please refer to sec 1.1.1.
+
+Now that we are in the same directory, lets instantiate the db first. You can use whatever db you want as long as you specify on the settings.py file which database you are using. I will use the default sqlite::
+    
+    python manage.py migrate
+    
+    # now create your super user for your admin
+    
+    python manage.py createsuperuser #add your credentials and you are golden.
+    
+alright now start the django admin interface by typing::
+    
+    python manage.py runserver
+
+navigate to your localhost:8000 and you should see the index page saying "hello World"
+
+If you got till this point you are doing great!!
+
+Access the admin interface by adding '/admin' to the url and add your credentials.
+    
+    
+
     
