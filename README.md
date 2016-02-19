@@ -18,11 +18,12 @@ if you have read this far [here is a gift for you my good friend](http://imgur.c
 
 The project uses Django, Scrapy and Django-Dynamic-Scraper to scrape the links you provide. It then uses, Django Celery and Kombu for creating/executing cron tasks and transport respectively. 
 
-1.1) PREREQS YOU MIGHT NEED TO KNOW BEFORE RUNNING THIS PROJECT.
+1.1) PREREQ.S YOU MIGHT NEED TO KNOW BEFORE RUNNING THIS PROJECT.
 -----------------------------------------------------------------
 you need to have a familiarity with basic django. This project will be implemented with django 1.9 so the basic:
   1) python manage.py migrate- for initial db migrations
   2) python manage.py runserver - firing up the server on http://127.0.0.1:8000
+  3) scrapy commands.
   
 1.1.1) Get the project.
 -----------------------
@@ -70,7 +71,10 @@ navigate to your localhost:8000 and you should see the index page saying "hello 
 
 If you got till this point you are doing great!!
 
-Access the admin interface by adding '/admin' to the url and add your credentials.
+Access the admin interface by adding '/admin' to the url and add your credentials. you should be presented with a django admin
+dashboard which is where the data will be displayed. 
+something like this : 
+![alt text]! (http://i.imgur.com/rnec5tr.png)
     
     
 
