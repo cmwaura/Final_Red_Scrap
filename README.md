@@ -74,7 +74,7 @@ If you got till this point you are doing great!!
 Access the admin interface by adding '/admin' to the url and add your credentials. you should be presented with a django admin
 dashboard which is where the data will be displayed. 
 something like this : 
-![alt text]! (http://i.imgur.com/rnec5tr.png)
+![alt text](http://i.imgur.com/rnec5tr.png)
     
     
 
