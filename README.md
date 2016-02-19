@@ -133,7 +133,8 @@ Now we on the last part before we run the spider. Open the job wesite link and g
 
 For the scraper add the name of the scraper on the drop list and then add a scraper runtime of 1. Save your work and then open the terminal.
 
-1.4) Back to the terminal:
+1.4) RUNNING THE SPIDER:
+------------------------
 
 Go to the directory which hold the scrapy engine i.e scrapy.cfg. It should be on the same directory as django's manage.py directory. Type the following::
 
@@ -147,7 +148,7 @@ If things went well, then open the jobads tab in "mysites" and you should see so
 
 and there you have it. All the jobs scraped into your django ORM. Add a few more and play around with it.
 
-1.4) DEBUGGING PART I:
+1.5) DEBUGGING PART I:
 -----------------------
 
 So the scrape didnt work, first of all you should check to see whether you have the correct xpath and also whether the base to the xpath is right.
