@@ -51,7 +51,7 @@ for people using windows you will need an extra addition of [pywin32.exe](https:
  
     easy_install C:\>path\to\your\pywin32\install
     
-1.2) Running the admin.
+1.2) RUNNING THE ADMIN.
 -----------------------
 
 before you try to run the admin, make sure that you are in the same directory as 'manage.py' by using ls/dir. If you are not please refer to sec 1.1.1.
@@ -81,7 +81,7 @@ something like this :
 There are a couple of items that we can discuss in this documentation and a couple of others that i will advise you to look up 
 since there is more documentation on it. For reference i will refer you to Django-Dynamic-Scraper since this project is built on that.
 
-1.3 Scraper object classes
+1.3 SCRAPER OBJECT CLASSES
 --------------------------
 Click on the scraper object classes in the Dynamic Scraper section. Add a name of a the class(in my case i used jobAds), then
 at the bottom you will be faced  with a form similar to this one:
@@ -147,7 +147,8 @@ If things went well, then open the jobads tab in "mysites" and you should see so
 
 and there you have it. All the jobs scraped into your django ORM. Add a few more and play around with it.
 
-1.5) Debugging:
+1.4) DEBUGGING PART I:
+-----------------------
 
 So the scrape didnt work, first of all you should check to see whether you have the correct xpath and also whether the base to the xpath is right.
 In the terminal type::
